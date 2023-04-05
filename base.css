@@ -1,0 +1,319 @@
+@import url(./css/reset.css);
+
+/* Cores */
+:root {
+    --marfim: #fcf8f6;
+    --teal: #00bbd1;
+    --turquesa: #00e0ea;
+    --estanho: #96a1a8;
+    --amarelo: #ba8646;
+    --rosa: #aa6b7e;
+    --verde: #495d54;
+}
+
+/* Tipografia */
+/* font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Quicksand', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Chelsea Market', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+/* Páginas */
+/* Home */
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    flex-direction: column;
+}
+
+.hero {
+    background: var(--estanho);
+}
+
+.hero > h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color: var(--marfim);
+    padding: 0 2rem;
+}
+
+.hero > img {
+    height: 100vw;
+    padding: 2rem 0;
+}
+
+.hero > p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    padding: 0 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.hero > p > span {
+    font-family: 'Lobster', cursive;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--rosa);
+}
+
+.empatia {
+    background: var(--rosa);
+}
+
+.bolha > p {
+    padding: 0.3rem 0.15rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.bolha {
+    width: 80vw;
+    background: var(--marfim);
+    position: relative;
+    color: var(--verde);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+  
+.bolha::after {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: var(--marfim);
+    position: absolute;
+    bottom: -1rem;
+    left: calc(50% - 0.5rem);
+    clip-path: polygon(0 0, 100% 0, 90% 100%);
+}
+
+.empatia > img {
+    height: 70vw;
+    padding: 2rem 0;
+}
+
+.empatia > p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    padding: 0 2rem;
+    text-align: center
+}
+
+.destaque-empatia {
+    font-family: 'Lobster', cursive;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--rosa);
+}
+
+.destaque-bullying {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: red;
+}
+
+.escolha {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    text-align: center;
+}
+
+.escolha > p {
+    font-family: 'Lobster', cursive;
+    font-size: 1.3rem;
+    color: white;
+    padding-bottom: 0.3rem;
+}
+
+.escolha > button {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background: var(--marfim);
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.escolha > button:hover {
+    background: var(--amarelo);
+    color: var(--marfim);
+}
+
+.quatro-opcoes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-gap: 0.5rem;
+    background: var(--verde);
+}
+
+.quatro-opcoes button {
+    width: 100%;
+    padding: 0.5rem;
+    background: var(--marfim);
+    font-weight: 600;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bullying {
+    background: var(--verde);
+}
+
+.bullying > img {
+    height: 55vw;
+    padding: 2rem 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.bullying > p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--verde);
+    padding: 0 2rem;
+    text-align: center
+}
+
+.bullying > p > span {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--rosa);
+}
+
+.denuncia {
+    background: var(--amarelo);
+}
+
+.denuncia > img {
+    height: 70vw;
+    padding: 2rem 0;
+}
+
+.denuncia > p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    padding: 0 2rem;
+    text-align: center
+}
+
+.acompanhamento {
+    background: var(--turquesa);
+}
+
+.acompanhamento > img {
+    height: 70vw;
+    padding: 2rem 0;
+}
+
+.acompanhamento > p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    padding: 0 2rem;
+    text-align: center
+}
+
+
+.hifenizar {
+    verflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    hyphenate-limit-chars: 4 2 2;
+}
+
+.container-pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pagina-main {
+    display: flex;
+    padding: 1.5rem;
+}
+
+.persona {
+    width: 40vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.persona-empatia {
+    background-image: url(img/janna02.png);
+}
+
+.persona-bullying {
+    background-image: url(img/lucas02.png);
+}
+
+.persona-aconselhamento {
+    background-image: url(img/yumi02.png);
+}
+
+.persona-suporte {
+    background-image: url(img/aline02.png);
+}
+
+.persona-denuncia {
+    background-image: url(img/samuel02.png);
+}
+
+.pagina-texto-container {
+    height: 70vh;
+    width: 60vw;
+    z-index: 0;
+    background: transparent;
+    overflow: auto;
+    border-top: 1px solid var(--rosa); 
+    border-bottom: 1px solid var(--rosa); 
+}
+
+.pagina-texto {
+    height: 70vh;
+    font-size: 16px;
+}
+
+.pagina-texto p {
+    padding: 1rem 0;
+}
+
+.sombra {
+    box-shadow: 1px 1px 5px 1px rgba(150,161,168,0.74);
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(150,161,168,0.74);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(150,161,168,0.74);
+}
