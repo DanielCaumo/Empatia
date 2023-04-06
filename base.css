@@ -2,6 +2,7 @@
 @import url(./css/header.css);
 @import url(./css/home.css);
 @import url(./css/empatia.css);
+@import url(./css/denuncia.css);
 
 @import url(./css/botao.css);
 @import url(./css/efeitos.css);
@@ -127,4 +128,10 @@
     box-shadow: 1px 1px 5px 1px rgba(150,161,168,0.74);
     -webkit-box-shadow: 1px 1px 5px 1px rgba(150,161,168,0.74);
     -moz-box-shadow: 1px 1px 5px 1px rgba(150,161,168,0.74);
+}
+
+.bullying-tipo {
+    font-family: 'Chelsea Market', cursive;
+    color: var(--amarelo);
+    font-size: 1.2rem;
 }

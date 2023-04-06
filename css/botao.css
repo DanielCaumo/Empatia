@@ -10,15 +10,41 @@
     margin-right: auto;
     color: var(--marfim);
     font-family: 'Quicksand', sans-serif;
+    max-width: 400px;
 }
 
 .botao-2 {
     grid-column: span 2;
 }
 
+.botao-3 {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.2rem 0;
+    background: transparent;
+    border: 2px solid var(--marfim);
+    font-weight: 600;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--marfim);
+    font-family: 'Quicksand', sans-serif;
+    max-width: 200px;
+}
+
+.disabled {
+    border: 2px solid var(--estanho);
+    color: (--estanho);
+}
+
 .botao:hover {
     background: var(--marfim);
     color: var(--verde);
+}
+
+.disabled:hover {
+    border: 2px solid var(--estanho);
+    color: (--estanho);
 }
 
 .botao:hover span {

@@ -42,7 +42,10 @@ section > p > span {
 .hero > img {
     height: 100vw;
     padding: 2rem 0;
+    max-width: 500px;
 }
+
+
 
 /* Empatia */
 
@@ -67,6 +70,7 @@ section > p > span {
     transform: scaleX(-1);
 }
 
+
 /* Denúncia */
 .denuncia {
     background: var(--amarelo);
@@ -88,6 +92,23 @@ section > p > span {
 }
 
 /* Elementos */
+.convo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.heroimage {
+    max-width: 500px;
+    max-width: 80%;
+    margin: auto;
+}
+
+#persona-nome, #persona-cargo {
+    display: none;
+}
+
 /* Bolha */
 
 .bolha {
@@ -114,3 +135,54 @@ section > p > span {
     padding-top: 0.8rem;
     transform: scaleX(-1);
 }
+
+@media (min-width: 500px) { 
+
+    .convo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .convo-container img {
+        width: 400px;
+    }
+}
+
+@media (min-width: 700px) { 
+
+    .convo-container {
+        display: flex;
+        margin-top: 100px;
+        max-width: 1200px;
+    }
+
+    .convo-container .bolha {
+        padding-left: 3rem;
+    }
+
+    .convo-container img {
+        width: 40%;
+    }
+
+    .bolha {
+        width: 40%;
+    }
+
+    .convo-line {
+        max-width: 100%;
+        display: none;
+    }
+
+    #persona-nome {
+        display: block;
+        text-align: right;
+    }
+
+    #persona-cargo {
+        display: block;
+        text-align: right;
+        font-weight: 300;
+    }
+ }

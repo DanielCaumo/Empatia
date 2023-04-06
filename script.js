@@ -15,3 +15,5 @@ function burger(){
     links.style.display = 'none';
     quit.style.display = 'none';
   }
+
+  
