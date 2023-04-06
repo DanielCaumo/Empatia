@@ -1,0 +1,17 @@
+.botao {
+    width: 50%;
+    padding: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--marfim);
+    font-weight: 600;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--marfim);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.botao:hover {
+    background: var(--turquesa);
+    color: var(--verde);
+}

@@ -1,0 +1,140 @@
+/* Seção */
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    flex-direction: column;
+}
+
+section h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color: var(--marfim);
+    padding: 0 2rem;
+}
+
+section p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 0 2rem;;
+}
+
+section > p > span {
+    font-family: 'Lobster', cursive;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--rosa);    
+}
+
+/* Hero */
+
+.hero {
+    background: var(--estanho);
+}
+
+.hero > img {
+    height: 100vw;
+    padding: 2rem 0;
+}
+
+/* Empatia */
+
+.empatia {
+    background: var(--rosa);
+}
+
+.empatia > img {
+    height: 70vw;
+    padding: 0.5rem 0;
+}
+
+/* Bullying */
+.bullying {
+    background: var(--verde);
+}
+
+.bullying > img {
+    height: 55vw;
+    padding: 0.5rem 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* Denúncia */
+.denuncia {
+    background: var(--amarelo);
+}
+
+.denuncia > img {
+    height: 70vw;
+    padding: 0.5rem 0;
+}
+
+/* Acompanhamento */
+.acompanhamento {
+    background: var(--turquesa);
+}
+
+.acompanhamento > img {
+    height: 70vw;
+    padding: 0.5rem 0;
+}
+
+/* Elementos */
+/* Bolha */
+
+.bolha {
+    margin-top: 3rem;
+    width: 85vw;
+    position: relative;
+    color: var(--marfim);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.bolha > p {
+    padding: 0.3rem 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.1rem;
+}
+
+
+.bolha img {
+    width: 100%;
+    padding-top: 0.8rem;
+    transform: scaleX(-1);
+}
+
+/* Escolha */
+.escolha {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    text-align: center;
+}
+
+.escolha > p {
+    font-family: 'Lobster', cursive;
+    font-size: 1.3rem;
+    color: white;
+    padding-bottom: 0.3rem;
+}
+
+.quatro-opcoes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-gap: 0.5rem;
+    background: var(--verde);
+}

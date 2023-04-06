@@ -1,0 +1,39 @@
+.hero {
+    background: var(--estanho);
+}
+
+.hero > h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color: var(--marfim);
+    padding: 0 2rem;
+}
+
+.hero > img {
+    height: 100vw;
+    padding: 2rem 0;
+}
+
+.hero > p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    padding: 0 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.hero > p > span {
+    font-family: 'Lobster', cursive;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--rosa);
+}
+
+.hero > p > span {
+    font-family: 'Lobster', cursive;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--rosa);
+}
