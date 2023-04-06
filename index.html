@@ -1,113 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Empatia</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="base.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="base.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>.</div>
-        <div>
-            <h1>equipe empatia</h1>
+      <div>
+        <h1>equipe empatia</h1>
+      </div>
+      <div>
+        <i id="burger" class="icon" onclick="burger()">menu</i>
+        <i id="quit" class="icon" onclick="quit()">fechar</i>
+        <div id="links">
+            <a href="" class="burgermenu-link">O que é empatia?</a>
+            <a href="" class="burgermenu-link">O que é bullying?</a>
+            <a href="" class="burgermenu-link">Como lidar com o bullying?</a>
+            <a href="" class="burgermenu-link">Notificar um caso</a>
+            <a href="" class="burgermenu-link">Acompanhamento de casos</a>
         </div>
-        <div>.</div>
+      </div>
     </header>
     <div class="container">
-        <section class="hero">
-            <h2>Oi, Fernando!</h2>
-            <p>Tudo bem com você?</p>
-            <img src="img/time.png" alt="" class="heroimage">
-            <p>Nós somos a equipe <span class="destaque-empatia">empatia</span> e estamos aqui para te ajudar caso
-                esteja sofrendo algum tipo de bullying ou queira ajudar alguém que esteja passando por isto.</p>
-        </section>
-        <section class="empatia" id="empatia">
-            <div class="bolha">
-                <p>Que bom te encontrar! Me chamo Janna e esse é o meu cão-guia, o Fred que me ajuda a navegar pela
-                    vida.</p>
-                <p>Viu que curioso o nome da nossa equipe? Quer saber o significado e entender o que fazemos? Só clicar
-                    em saber mais abaixo que terei o prazer de explicar! Caso contrário, meus amigos Yumi e Lucas te
-                    aguardam ali embaixo.</p>
-                <img src="img/convo.png" alt="">
-            </div>
-            <img src="img/janna01.png" alt="" class="heroimage">
-            <div class="escolha">
-                <p>O que fazer?
-                <p></p>
-                <div class="tres-opcoes"></div>
-                <a class="botao">saber mais sobre <span class="destaque-empatia">empatia</span></a>
-                <a class="botao">conhecer Yumi e Lucas</a>
-            </div>
-        </section>
-        <section class="bullying" id="bullying">
-            <div class="bolha">
-                <p>Que bom que você chegou, sou Yumi e este é o meu amigo Lucas, não sei se já sofreu ou presenciou bullying, não é agradável, mas nós já passamos por isso e estamos aqui para ajudar.</p>
-                <p>Juntos somos fortes e podemos superar qualquer situação. O Lucas pode explicar e te ajudar a identificar casos, já eu estou aqui para dar conselhos de como superar.</p>
-                <p>Caso queira denunciar uma situação que vivenciou ou presenciou, é só falar com o Samuel.</p>
-                <img src="img/convo.png" alt="">
-            </div>
-            <img src="img/yumilucas01.png" alt="" class="heroimage">
-            <div class="escolha">
-                <p>O que fazer?
-                <p>
-                <div class="quatro-opcoes">
-                    <a class="botao">falar com Lucas</a>
-                    <a class="botao">falar com Yumi</a>
-                    <a class="botao">falar com Samuel</a>
-                </div>
-            </div>
-        </section>
-        <section class="denuncia" id="denuncia">
-            <div class="bolha">
-                <p>Oi, Fernando! Sou o Samuel e estou aqui para te ajudar a notificar o bullying que vem sofrendo ou que
-                    viu outra pessoa sofrer.</p>
-                <p>Não se preocupe, caso não queira que outros saibam é possível fazer uma denúncia anônima, mas
-                    conseguiremos resolver mais rápido se você informar o seu nome. Não iremos expor o teu caso sem a
-                    sua autorização.</p>
-                <p>Caso já tenha feito alguma notificação anterior, pode acompanhar o andamento com a Aline.</p>
-                <img src="img/convo.png" alt="">
-            </div>
-            <img src="img/samuel01.png" alt="" class="heroimage">
-            <div class="escolha">
-                <p>O que fazer?
-                <p>
-                    <hr>
-                <div class="tres-opcoes"></div>
-                <a class="botao">notificar um caso de bullying</a>
-                <a class="botao">falar com Aline</a>
-            </div>
-        </section>
-        <section class="acompanhamento" id="acompanhamento">
-            <div class="bolha">
-                <p>Oi, Fernando! Como vai?</p>
-                <p>Sou Aline, vi aqui que você não notificou nenhum caso de bullying. Caso venha a notificar algum dia
-                    eu estarei aqui para te informar o andamento com as ações tomadas para acabar com o problemas.</p>
-                <!-- <p>Caso queira saber o andamento da sua denúncia, é só clicar no botão "acompanher casos" abaixo.</p> -->
-                <p>Não tenha receio de notificar caso presenciei algum caso, faremos de tudo para melhorar o ambiente
-                    escolar. Um grande abraço e bons estudos!</p>
-                <img src="img/convo.png" alt="">
-            </div>
-            <img src="img/aline01.png" alt="" class="heroimage">
-            <div class="escolha">
-                <p>O que fazer?
-                <p>
-                    <hr>
-                <div class="tres-opcoes"></div>
-                <a class="botao">acompanhar casos</a>
-                <a class="botao">ver ações gerais</a>
-            </div>
-        </section>
+      <section class="hero" id="hero">
+        <h2>Oi, Fernando!</h2>
+        <p class="digitar">Tudo bem com você?</p>
+        <img src="img/time.png" alt="" class="heroimage" />
+        <p class="type">
+          Nós somos a <span class="destaque-empatia">equipe empatia</span> e
+          estamos aqui para te ajudar caso esteja sofrendo algum tipo de
+          <span class="destaque-bullying">bullying</span> ou queira ajudar
+          alguém que esteja passando por isto.
+        </p>
+      </section>
+      <section class="empatia" id="empatia">
+        <div class="bolha">
+          <p>
+            Que bom te encontrar! Me chamo Janna e esse é o meu cão-guia, o Fred
+            que me ajuda a navegar pela vida.
+          </p>
+          <p class="hifenizar">
+            Viu que curioso o nome da nossa equipe? Quer saber o significado e
+            entender o que fazemos? Só clicar em saber mais abaixo que terei o
+            prazer de explicar! Caso contrário, nossos amigos Yumi e Lucas te
+            aguardam ali embaixo.
+          </p>
+          <img src="img/convo.png" alt="" />
+        </div>
+        <img src="img/janna01.png" alt="" class="heroimage" />
+        <div class="escolha">
+          <h3>O que fazer?</h3>
+          <p></p>
+          <div class="escolha-menu">
+            <a href="pages/empatia.html" class="botao botao-2"
+              >saber mais sobre <span class="destaque-empatia">empatia</span>
+            </a>
+            <a href="#bullying" class="botao botao-2">falar com Yumi e Lucas</a>
+          </div>
+        </div>
+      </section>
+      <section class="bullying" id="bullying">
+        <div class="bolha">
+          <p>
+            Que bom que você chegou, sou Yumi e este é o meu amigo Lucas, não
+            sei se já sofreu ou presenciou bullying, não é agradável, mas nós já
+            passamos por isso e estamos aqui para ajudar.
+          </p>
+          <p>
+            Juntos somos fortes e podemos superar qualquer situação. O Lucas
+            pode te ajudar a identificar casos, se estiver na dúvida, já eu
+            estou aqui para dar conselhos de como superá-lo.
+          </p>
+          <p>
+            Caso queira denunciar uma situação que vivenciou ou presenciou, é só
+            falar com o Samuel que está ali embaixo.
+          </p>
+          <img src="img/convo.png" alt="" />
+        </div>
+        <img src="img/yumilucas01.png" alt="" class="heroimage" />
+        <div class="escolha">
+          <h3>O que fazer?</h3>
+          <p></p>
+          <div class="escolha-menu">
+            <a href="pages/bullying.html" class="botao botao-2"
+              >falar com Lucas sobre como identificar</a
+            >
+            <a href="pages/aconselhamento.html" class="botao botao-2"
+              >falar com Yumi sobre como superar</a
+            >
+            <a href="#denuncia" class="botao botao-2"
+              >notificar um caso para o Samuel</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="denuncia" id="denuncia">
+        <div class="bolha">
+          <p>
+            Oi, Fernando! Sou o Samuel e estou aqui para ajudar a notificar
+            casos de bullying.
+          </p>
+          <p>
+            Você sofreu ou presenciou algum caso? Não se preocupe, se preferir
+            pode fazer uma notificação anônima, ninguém saberá que foi você, mas
+            conseguiremos resolver mais rápido se você informar o seu nome.
+          </p>
+          <p>
+            Caso já tenha feito alguma notificação anterior, pode acompanhar o
+            que está sendo feito para te ajudar com a Aline.
+          </p>
+          <img src="img/convo.png" alt="" />
+        </div>
+        <img src="img/samuel01.png" alt="" class="heroimage" />
+        <div class="escolha">
+          <h3>O que fazer?</h3>
+          <p></p>
+          <div class="escolha-menu">
+            <a href="pages/denuncia.html" class="botao botao-2">notificar um caso</a>
+            <a href="#acompanhamento" class="botao botao-2"
+              >falar com Aline sobre suporte</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="acompanhamento" id="acompanhamento">
+        <div class="bolha">
+          <p>Oi, Fernando! Como vai?</p>
+          <p>
+            Sou Aline, vi aqui que você não notificou nenhum caso de bullying.
+            Caso venha a notificar algum dia eu estarei aqui para te informar o
+            andamento com as ações tomadas para acabar com o problemas.
+          </p>
+          <!-- <p>Caso queira saber o andamento da sua denúncia, é só clicar no botão "acompanher casos" abaixo.</p> -->
+          <p>
+            Não tenha receio de notificar caso presenciei algum caso, faremos de
+            tudo para melhorar o ambiente escolar. Um grande abraço e bons
+            estudos!
+          </p>
+          <img src="img/convo.png" alt="" />
+        </div>
+        <img src="img/aline01.png" alt="" class="heroimage" />
+        <div class="escolha">
+          <h3>O que fazer?</h3>
+          <p></p>
+          <div class="escolha-menu">
+            <a href="pages/suporte.html" class="botao botao-2">acompanhar caso notificado</a>
+            <a href="pages/noticias.html" class="botao botao-2"
+              >ver ações da escola para o combate</a
+            >
+            <a href="#hero" class="botao botao-2">voltar ao início</a>
+          </div>
+        </div>
+      </section>
     </div>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

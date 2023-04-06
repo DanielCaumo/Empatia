@@ -1,0 +1,29 @@
+.container-aconselhamento {
+    background-color: var(--verde);
+    height: 100vh;
+}
+
+.container-bullying {
+    background-color: var(--verde);
+    height: 100vh;
+}
+
+.container-denuncia {
+    background-color: var(--amarelo);
+    height: 100vh;
+}
+
+.container-empatia {
+    background-color: var(--rosa);
+    height: 100vh;
+}
+
+.container-noticias {
+    background-color: var(--teal-medio);
+    height: 100vh;
+}
+
+.container-suporte {
+    background-color: var(--teal-medio);
+    height: 100vh;
+}

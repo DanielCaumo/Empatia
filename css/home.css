@@ -79,7 +79,7 @@ section > p > span {
 
 /* Acompanhamento */
 .acompanhamento {
-    background: var(--turquesa);
+    background: var(--teal-medio);
 }
 
 .acompanhamento > img {
@@ -109,32 +109,8 @@ section > p > span {
     line-height: 1.1rem;
 }
 
-
 .bolha img {
     width: 100%;
     padding-top: 0.8rem;
     transform: scaleX(-1);
-}
-
-/* Escolha */
-.escolha {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-    text-align: center;
-}
-
-.escolha > p {
-    font-family: 'Lobster', cursive;
-    font-size: 1.3rem;
-    color: white;
-    padding-bottom: 0.3rem;
-}
-
-.quatro-opcoes {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-gap: 0.5rem;
-    background: var(--verde);
 }
